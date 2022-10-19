@@ -11,8 +11,7 @@ export default function Calender() {
     const handlefetch =  async () => {
         let apiData = await fetch(`https://newapi.brightchamps.com/academy/get_slot_info?teacher_id=${teacherId}`)
         let apiJson = await apiData.json() 
-        setData(apiJson) 
-        console.log(teacherId, "j") 
+        setData(apiJson)  
      }  
 
      const inputValue = (value) => {
@@ -22,8 +21,7 @@ export default function Calender() {
       const hadnlechange = () => {
         if(teacherId){
           handlefetch()
-        } 
-        console.log("Clicked")
+        }  
       }
 
     return (
