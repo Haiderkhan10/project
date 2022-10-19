@@ -1,0 +1,59 @@
+*{
+  margin: 0px;
+}
+.App {
+  text-align: center;
+}
+ 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} 
+.App-link {
+  color: #61dafb;
+} 
+.App{
+  height: 100vh;
+  background-color: rgb(212, 247, 242);  
+}
+
+.nav{
+  background-color: rgb(168, 249, 237);
+  border: 1px solid rgb(168, 249, 237);
+  padding: 40px;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.teacherheading{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+
+}
+
+input{
+  padding: 10px;
+  height: 20px;
+  border-radius: 8px;
+  border: none;
+  margin: 3px 20px 40px 0px;
+}
+button{
+  height: 27px;
+  background-color: rgba(48, 212, 48, 0.819);
+  color: white;
+  border-radius: 5px;
+  margin: 0px 0px 10px 0px;
+}
+
