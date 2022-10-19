@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react"
 import Calendar from '@toast-ui/react-calendar';
 import '@toast-ui/calendar/dist/toastui-calendar.min.css';
 
-export default function CalenderPackage(props) { 
-   console.log("s")
+export default function CalenderPackage(props) {  
   const [events, setEvents] = useState([]);  
   const initialEvents = []
   const convertedDay = Object.keys(props.data) 
@@ -22,14 +21,12 @@ export default function CalenderPackage(props) {
           category: 'time',
           start: start,
           end: end ,
-        } 
-        // console.log(object)
+        }  
         initialEvents.push(object)
       id = id + 1
       }
 
-    }
-    // console.log(initialEvents)
+    }  
     setEvents(initialEvents) 
   }, [props.data]) 
   const calendars = [{ id: 'cal1', name: 'Personal' }];  
