@@ -27,7 +27,7 @@ export default function Calender() {
     return (
         <>
         <div className="teacherheading">Teacher Calender</div>
-        <input placeholder="Enter Teacher Id" type="text" onChange={(e) => inputValue(e.target.value)}/>
+        <input placeholder="Enter Teacher Id" type="number" onChange={(e) => inputValue(e.target.value)}/>
         <button onClick={hadnlechange}>Click to Get Info</button>
         {Object.keys(data).length > 0 && <CalenderPackage data={data}/>}
         </>
